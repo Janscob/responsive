@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+	background-color:white;
+}
+header{
+  background-color:#f1f1f1;
+  text-align:center;
+  padding:20px;
+}
+h3{
+	text-align: center;
+}
+nav{
+	overflow: hidden;
+	height:60px;
+	background-color:black;
+	position:sticky;
+	top:0;
+}
+nav p{
+	font-family:arial;
+	color:#222;
+	font-size: 24px;
+	line-height:55px;
+	float:left;
+	padding:0px 24px;
+	color:white;
+}
+nav ul{
+	float:left;
+	margin-right: 150px;
+}
+nav ul li{
+	float:left;
+	list-style:none;
+	position:relative;
+}
+nav ul li a{
+	display: block;
+	font-family:arial;
+	color:#222;
+	font-size: 14px;
+	padding:22px 14px;
+	text-decoration: none;
+	color:white;
+}
+nav ul li ul{
+	display: none;
+	position:absolute;
+	background-color: black;
+	color:white;
+	padding:0;
+	border-top:3px solid cyan;
+	border-radius: 0px 0px 4px 4px;
+}
+nav ul li ul li a:hover{
+	background-color: #f3f3f3;
+
+}
+nav ul li ul li a{
+	width: 110px;
+}
+.active{
+	background-color:green;
+}
+nav ul li a:hover:not(.active){
+	background-color:green;
+}
+nav ul li:hover ul{
+	display: block;
+}
+.main-div{
+  width:50%;
+  float:left;
+  background-color:#f1f1f1;
+}
+.content-div{
+  background-color:#f1f1f1;
+  width:25%;
+  float:left;
+}
+.foo-div{
+  background-color:#f1f1f1;
+  padding:10px;
+  text-align:center;
+}
+@media screen and (max-width:600px){
+  .content-div,.main-div{
+    width:100%;
+  }
+}
